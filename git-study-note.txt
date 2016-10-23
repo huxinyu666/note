@@ -1,0 +1,17 @@
+git study note 
+
+Git是什么
+Git是保存程序源代码，并提供一系列代码维护功能的网上仓库。
+
+
+怎么把代码传到Git上？
+1. 在Git上建立一个Repository(项目)
+2. 在本地把这个Repository拉下来
+   git clone + 项目的Git URl， eg. https://github.com/huxinyu666/note.git
+3. 添加新文件或做出一些改动。
+3.5 用git status(gst)查看当前状态
+4. 用git add . 确认你的改动
+5. 用git commit -m 提交并写出改动的标题
+6. 用git push origin(gp) 上传改动
+
+
