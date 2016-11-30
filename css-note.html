@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML-note</title>
+    <style>
+        nav li {
+        padding: 10px;
+      }
+        td {
+            padding: 10px;
+        }
+        [border="1"] {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+<!-- 链接 -->
+  <nav>
+    <ul border="2">
+        <li>asdfasd<a href="words.html">单词本</a></li>
+        <li><a href="html-note.html">HTML学习笔记</a></li>
+        <li><a href="git-study-note.html">GIT学习笔记</a></li>
+        <li><a href="http://www.w3school.com.cn/">W3C School</a></li>
+        <li><a href="https://developer.mozilla.org/zh-CN/docs/Learn/HTML">MDN 文档中心</a></li>
+    </ul>
+  </nav>
+
+    <h2>CSS基本概念</h2>
+    <ol>
+        <li>CSS: 级联样式表 Cascade Style Sheet</li>
+        <li>css 基本由多个rule组成</li>
+        <li>每一个rule由 selector(选择器)和属性及属性值组成</li>
+        <li>
+        Selector: 表达方式：
+        <table border="1" class="big middle">
+           <thead>
+               <tr>
+                   <th>语法</th>
+                   <th>举例</th>
+               </tr>
+           </thead>
+            <tr>
+                <td>#id</td>
+                <td>作用于含有该id的元素</td>
+            </tr>
+            <tr>
+                <td>.classname</td>
+                <td>.big</td>
+            </tr>
+            <tr>
+                <td>tag</td>
+                <td>div</td>
+            </tr>
+            <tr>
+                <td>selectorselector</td>
+                <td>.big.middle 两个selector连着写，作用于同时拥有这两个class的元素</td>
+            </tr>
+            <tr>
+                <td>selector selector</td>
+                <td>.big &nbsp;.middle 两个selector隔着一个空格，则该样式作用于.big下面所有.middle</td>
+            </tr>
+            <tr>
+                <td>></td>
+                <td>.big > .middle 两个selector隔着一个>, 则该样式仅作用于父亲是.big的.middle</td>
+            </tr>
+            <tr>
+                <td>[border]</td>
+                <td>作用于所有有border属性的元素</td>
+            </tr>
+        </table>
+</li>
+    </ol>
+
+
+</body>
+
+</html>
