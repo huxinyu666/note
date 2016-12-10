@@ -1,0 +1,37 @@
+h1 {
+    text-align: center;
+    margin-top: 300px;
+    transition: all 0.6s ease-out;
+}
+
+/**
+ * Color:  RGB
+ * 颜色码分为6位16进制数字，每两位分别对应红，绿，蓝
+ * 0123456789ABCDEF
+ * 黑: 00 00 00
+ * 白: ff ff ff = 红： 255, 绿: 255, 蓝: 255
+ * 红：ff 00 00
+ * 绿：00 ff 00
+ * 蓝: 00 00 ff
+ * 灰  dd dd dd
+ * 深灰： 33 33 33
+ * 深蓝： 00 66 99
+ */
+
+h1:hover {
+    font-size: 100px;
+    color: #26ddb2;
+}
+
+a:link {
+    color: #333;
+}
+a:vistited {
+    color: #080901;
+}
+a:hover {
+  color: #22ea22;  
+}
+a:active {
+    color: #336699;
+}
