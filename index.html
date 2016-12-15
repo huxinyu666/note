@@ -30,12 +30,15 @@
         <section id="main-content">
 
 <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>我看了《神奇动物在哪里》</h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>我看了《神奇动物在哪里》 2016－12－12.</h3>
 
-<p>dfjalfja</p>
+<p>我看了j·k·罗琳编剧的《神奇动物在哪里》，我觉得他是哈利波特的番外篇，这个电影里的动物制作很是奇特还有特殊的能力。3d特效使电影的动物似乎很是逼真，电影的故事内容不太好，故事情节不是太连贯，结局很一般。电影中胖子的角色很是搞笑，在霍霍格被消灭掉，有一个小小的飞了出去，可能在续集解释。</p>
+<a id="play-btn" href="javascript:playVideo()">Play</a>
 
-
-
+<h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>我学会了游泳 2016－12－13.</h3><div><img src="swim.jpg" alt="出问题了">
+<p>我学会了蛙泳。我的心得是：首先游泳要放松心情，放松身体使身体要在水面上浮起来，感觉自己是一只🐸，再像🐸一样蹬腿，双腿外翻让膝盖碰一下，可以蹬水的面积加大和夹水的面积也加大，使身体在水里前进更多，之后加紧腿停2秒，划手。划手使双臂自然下垂往后抱水 ，然后双臂合拢推出双手再蹬，反反复复就可以游了。</p>
+</div>
 
         </section>
 
@@ -55,6 +58,25 @@
       </div>
     </div>
 
-  
+  <div id="video-cover">
+      <video id="video-content" onended="hideVideo()"><source src="video/intro_story.mp4" type="video/mp4"></video>
+  </div>
+  <script>
+      function playVideo(evt) {
+          var cover = document.getElementById('video-cover');
+          var vid = document.getElementById('video-content');
+          cover.style.display = 'block';
+          vid.play();
+          
+          // jQuery
+          //$('#video-cover').show();
+          //$('#video-content').get(0).play();
+      }
+      
+      function hideVideo() {
+          var cover = document.getElementById('video-cover');
+          cover.style.display = 'none';
+      }
+  </script>
   </body>
 </html>
